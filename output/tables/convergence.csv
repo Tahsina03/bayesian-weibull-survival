@@ -1,0 +1,7 @@
+"parameter","Rhat","ESS"
+"(Intercept)",1.003,2908
+"age_c",1.001,3094
+"female",1.001,3018
+"ecog1",1.002,3041
+"ecog2+",1.002,2994
+"log_sigma",1.001,2877
