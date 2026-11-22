@@ -23,7 +23,7 @@ Deaths contribute the log density, and censored patients contribute the log surv
 - **Priors:** $\beta_j \sim N(0, 10^2)$ (weakly informative), $\log\sigma \sim N(0, 2^2)$
 
 ## Sampler
-- **Proposal:** random-walk Metropolis with a multivariate normal proposal. Its covariance is $(2.38^2/d)\,H^{-1}$, where $H$ is the Hessian of the negative log posterior at the mode (Roberts, Gelman & Gilks, 1997).
+- **Proposal:** random-walk Metropolis with a multivariate normal proposal. Its covariance is $(2.38^2/d) \cdot H^{-1}$, where $H$ is the Hessian of the negative log posterior at the mode (Roberts, Gelman & Gilks, 1997).
 - **Chains:** 4 chains from dispersed starting values, 20,000 iterations each, with the first 5,000 discarded as burn-in.
 - **Acceptance rate:** about 0.29 in every chain. The theoretical optimum for this dimension is about 0.23 to 0.3.
 
